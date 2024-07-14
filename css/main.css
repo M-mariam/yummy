@@ -1,9 +1,11 @@
 
 :root{
   --site-color : #0D0D0D;
+  --main-color: #fff;
 }
 body{
   background-color: var( --site-color);
+  color: #fff;
 }
 
 h3, h1, span, p{
