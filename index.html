@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="imges/logo.png" type="image/x-icon">
+  <title>Yummy</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="webfonts/">
+
+</head>
+<body>
+    <div class="side-bar d-flex">
+      <div class="menu bg-black d-flex flex-column justify-content-between">
+        <div class="links">
+          <div onclick="displaySearchForm();  closeNav();" id="search"><a href="#search">Search</a></div>
+          <div onclick="getCategory(); closeNav();" id="categories"><a href="#categories">Categories</a></div>
+          <div onclick="getArea(); closeNav();"id="area"><a href="#area">Area</a></div>
+          <div onclick="getIngredient(); closeNav();" id="ingredients"><a href="#ingredients">Ingredients</a></div>
+          <div onclick="displayContactForm(); closeNav();" id="contactus"><a href="#contactus">Contact us</a></div>
+        </div>
+        <div class="social-icons">
+          <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div class="footer">
+            <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+      </div>
+        </div>
+    </div>
+      <div class="vertical-nav d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black">
+        <img class="logo align-self-start" src="imges/logo.png" alt="" srcset="">
+        <i class="fa-solid open-close-icon fa-align-justify align-self-center fa-2x"></i>
+        <div>
+          <i class="fa-solid fa-globe d-block"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- search section -->
+    <div class="container w-75" id="searchSection">
+    </div>
+      <div class="container">
+        <div class="row g-2" id="rowData">
+        </div>
+      </div>
+
+
+     <!-- loader -->
+       <div class="loader">
+    <div class="spinner">
+    </div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

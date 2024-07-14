@@ -1,0 +1,101 @@
+
+:root{
+  --site-color : #0D0D0D;
+}
+body{
+  background-color: var( --site-color);
+}
+
+h3, h1, span, p{
+  margin: 0;
+  padding: 0;
+}
+
+/* SideBar */
+
+.side-bar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 12;
+  height: 100vh;
+}
+
+
+.side-bar .menu .links a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 30px;
+  line-height: 60px;
+}
+.side-bar .menu .social-icons{
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 10px;
+}
+.vertical-nav{
+  cursor: pointer;
+}
+.logo{
+  width: 50px;
+}
+
+/* loader */
+.loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #252525;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.spinner {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 3px solid #fff;
+  border-right: 3px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+/* meals */
+
+ .layer{
+  width: 100%;
+  height: 100%;
+  background-color: #f9f6f6ca;
+  top: 100%;
+  transition: .5s; 
+}
+.meals:hover .layer {
+  top: 0; 
+}
+
+.meals .layer {
+  background: rgba(255, 255, 255, 0.8); /* Ensure a consistent background */
+  box-shadow: none; /* Remove any shadow */
+}
+
+.meals:hover .layer {
+  bottom: 0; /* Ensure the hover effect works properly */
+  box-shadow: none; /* Remove any shadow */
+}
+
+/* search */
